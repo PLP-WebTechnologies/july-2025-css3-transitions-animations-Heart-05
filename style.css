@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Box for animation */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin-top: 20px;
+    transition: all 1s ease; /* Smooth transition */
+}
+
+/* Keyframe animation */
+@keyframes slideAndRotate {
+    0% { transform: translateX(0) rotate(0deg); background-color: coral; }
+    50% { transform: translateX(150px) rotate(180deg); background-color: skyblue; }
+    100% { transform: translateX(0) rotate(360deg); background-color: coral; }
+}
